@@ -1,0 +1,260 @@
+@import url(<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    height: 100vh;
+    font-family: Raleway, sans-serif;
+    background: #2F3238;
+}
+
+.img_logo{
+    width: 100%;
+    height: 80%;
+    background-size: cover;
+    padding-left: 24px;
+}
+
+section{
+    margin-top: 80px;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    margin-right: 35%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.active{
+    border-bottom: 2px solid rgb(0, 78, 127);
+}
+
+.container{
+    width: 1440px;
+    margin: 0 auto;
+} 
+.container3{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.row{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+}
+.col-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+}
+.col-3 {
+    flex: 0 0 auto;
+    width: 25%;
+}
+.col-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+.col-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+}
+.col-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+.col-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+}
+.col-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+}
+.col-9 {
+    flex: 0 0 auto;
+    width: 75%;
+}
+.col-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+}
+.col-11 {
+    flex: 0 0 auto;
+    width: 91.66666667%;
+}
+.col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+.nav_wrapper{
+    display: flex;
+    list-style: none;
+}
+.nav_link{
+    font-style:normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #282828;
+    margin-left: 80px;
+}
+
+.justiy-content-center{
+    justify-content: center;
+}
+.justiy-space-between{
+    justify-content: space-between;
+}
+.aling-items-center{
+    align-items: center;
+}
+.btn_login{
+    width: 102px;
+    height: 40px;
+    border: 2px solid rgb(0, 78, 127);
+    border-radius: 6px;
+    color: rgb(0, 78, 127);
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 14px;
+}
+.btn_started{
+    width: 140px;
+    height: 40px;
+    background: rgb(0, 78, 127);
+    border: 1px solid rgb(0, 78, 127);
+    border-radius: 6px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    
+}
+
+.btn_search{
+    width: 140px;
+    height: 40px;
+    background: rgb(0, 78, 127);
+    border: 1px solid rgb(0, 78, 127);
+    border-radius: 6px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 20px;
+    
+}
+
+.btn{
+    width: 140px;
+    height: 40px;
+    background: rgb(0, 78, 127);
+    border: 1px solid rgb(0, 78, 127);
+    border-radius: 6px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 20px;
+    width: 80px;
+}
+.header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+.image{
+    background: rgb(0, 78, 127);
+    position: relative;
+    flex: 1;
+    max-width: 460px;
+    height: 300px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.image img{
+    opacity: 0.8;
+    position:relative;
+    vertical-align: top;
+    transition: 0.6s;
+    transition-property: opacity;
+}
+
+.image:hover img{
+    opacity:1;
+}
+
+.image .details{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+
+.image .details h2{
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 70px;
+    transition: 0.4s;
+    transition-property: transform;
+}
+
+
+
+.image:hover .detail h2{
+    transform: translateY(-30px);
+}
+
+.image .details p{
+    margin: 30px 30px 0 30px;
+    font-size: 14px;
+
+    text-align: center;
+    opacity: 0;
+    transition: 0.6s;
+    transition-property: opacity, transform;
+}
+
+.image:hover .details p{
+    opacity:1;
+    transform: translateY(-10px);
+}
+
+.more{
+    position: absolute;
+    background: rgba(255,255,255);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    bottom: -60px;
+    transition: 0.6s;
+    transition-property: bottom;
+}
+
+.image:hover .more{
+    bottom: 0;
+}
